@@ -1,0 +1,43 @@
+.content{
+    margin-top: 90px;
+    margin-left: 45px;
+}
+
+p{
+    color:var(--primary--color);
+    font-size: 40px;
+}
+.text--white{
+    color:#fff;
+}
+h1{
+    color:white;
+    font-size: 100px;
+}
+
+h1 span{
+    color: var(--primary--color);
+    margin-right: 15px;
+}
+.buttons{
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+button{
+    padding: 15px;
+    border-radius: 25px;
+    border: none;
+    background-color: var(--primary--color);
+}
+button:hover{
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+.btn--transparent{
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+}
+

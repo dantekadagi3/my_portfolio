@@ -1,0 +1,42 @@
+section{
+    
+}
+
+h2{
+    color: white;
+    font-size: 80px;
+    text-align: center;
+}
+hr {
+    width: 250px;
+    display: block;
+    text-align: center;
+    height: 5px;
+    background-color: var(--primary--color);
+    border: none;
+    border-radius: 20px;
+    margin: 0 auto; 
+  }
+  .content{
+    color: white;
+   font-size: 20px;
+   width: 600px;
+   line-height: 1.5;
+  }
+  .about--left{
+    border-left: 2px solid var(--primary--color);
+    border-bottom: 2px solid var(--primary--color);
+    height: fit-content;
+    width: fit-content;
+    padding: 10px;
+  }
+  .about--container{
+    display: flex;
+    margin: 30px;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+  }
+  .about--left img{
+height: 600px;
+  }

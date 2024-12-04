@@ -1,0 +1,47 @@
+.navigate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.navigate nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigate ul li {
+    margin-right: 20px;
+}
+
+.navigate ul li:last-child {
+    margin-right: 0;
+}
+
+.navigate ul li a {
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    transition: color 0.3s ease, text-decoration-color 0.3s ease;
+}
+
+.navigate ul li a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--primary--color);
+    color: var(--primary--color);
+    text-decoration-thickness: 3px;
+    text-underline-position: below;
+}
+
+.navigate .logo {
+    margin-left: 20px;
+    color: white;
+    font-size: 24px;
+    
+}
