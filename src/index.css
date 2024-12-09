@@ -3,6 +3,7 @@
 :root{
   --primary--color:rgb(250, 181, 62);
   --secondary--color:#FFFFFF;
+  --second--color:#2e2e2e;
 }
 *{
   margin:0;

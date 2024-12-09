@@ -1,0 +1,21 @@
+.text--button{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    gap: 6px;
+    flex-grow: 1;
+    background-image: url('../assets/class3.jpeg');
+    height: 200px;
+}
+.main--text{
+    color:#FFF;
+    font-weight: bold;
+}
+.primary--text{
+    font-size: 30px;
+}
+button{
+    font-weight: bold;
+    background: rgb(247, 173, 47);
+}
