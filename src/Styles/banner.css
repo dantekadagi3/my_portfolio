@@ -1,21 +1,70 @@
-.text--button{
-    display:flex;
+.text--button {
+    display: flex;
     justify-content: center;
     align-items: center;
-    justify-content: space-around;
     gap: 6px;
     flex-grow: 1;
     background-image: url('../assets/class3.jpeg');
     height: 200px;
+    background-size: cover; /* Ensures the image covers the div */
+    background-position: center; /* Centers the background image */
+    padding: 10px;
 }
-.main--text{
-    color:#FFF;
+
+.main--text {
+    color: #FFF;
     font-weight: bold;
+    text-align: center; /* Ensures text stays centered on smaller screens */
 }
-.primary--text{
+
+.primary--text {
     font-size: 30px;
+    text-align: center;
 }
-button{
+
+/* Style for the button */
+button {
     font-weight: bold;
     background: rgb(247, 173, 47);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Button hover effect */
+button:hover {
+    background: rgb(255, 200, 80);
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .text--button {
+        flex-direction: column; /* Stack elements vertically */
+        height: auto; /* Adjust height for smaller screens */
+    }
+    
+    .primary--text {
+        font-size: 24px; 
+    }
+
+    button {
+        padding: 8px 16px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .text--button {
+        gap: 4px; 
+        padding: 5px; 
+    }
+
+    .primary--text {
+        font-size: 20px; 
+    }
+
+    button {
+        font-size: 14px; 
+    }
 }
