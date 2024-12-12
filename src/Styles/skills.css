@@ -5,10 +5,12 @@
   --circle-bg: #e0e0e0;
 }
 
+
 .skills-section {
   padding: 2rem;
   background-color: var(--background);
   color: var(--bar-bg);
+   background: #141414;;
 }
 
 .skills-container {

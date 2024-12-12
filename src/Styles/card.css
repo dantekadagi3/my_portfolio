@@ -1,12 +1,14 @@
-
-.my--services{
+.my--services {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 20px; /* Adjusted gap for better spacing */
     flex-wrap: wrap;
     margin-top: 30px;
+    padding: 10px; /* Added padding for better layout on smaller screens */
+    background-color: #000; /* Black background for the section */
 }
+
 .main--card {
     height: 300px;
     width: 400px;
@@ -16,31 +18,59 @@
     align-items: center;
     padding: 20px;
     text-align: center;
-    background: rgba(54, 53, 54, 0.7);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: rgba(50, 50, 50, 0.85); /* Translucent dark greyish background */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Subtle shadow for depth */
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .main--card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6); /* Enhanced shadow on hover */
 }
 
 .card--icon img {
-    width: 50px; 
-    height: 50px; 
-    margin-bottom: 15px; 
+    width: 60px; 
+    height: 60px;
+    margin-bottom: 15px;
 }
 
 .card--title {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: bold;
-    margin: 10px 0; 
+    margin: 10px 0;
     color: #ffffff; 
 }
 
 .card--text {
     font-size: 1rem;
-    color: #dddddd; /* Text color */
+    color: #cccccc;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .main--card {
+        width: 300px; 
+        height: auto; 
+    }
+}
+
+@media (max-width: 480px) {
+    .main--card {
+        width: 250px; 
+        padding: 15px; 
+    }
+
+    .card--icon img {
+        width: 40px; 
+        height: 40px;
+    }
+
+    .card--title {
+        font-size: 1.4rem;
+    }
+
+    .card--text {
+        font-size: 0.9rem; 
+    }
 }

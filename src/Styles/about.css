@@ -1,42 +1,88 @@
-section{
-    
+.about--section {
+  background: #141414;
+  padding: 50px 20px;
 }
 
-h2{
-    color: white;
-    font-size: 80px;
-    text-align: center;
+h2 {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 10px;
 }
+
 hr {
-    width: 250px;
-    display: block;
-    text-align: center;
-    height: 5px;
-    background-color: var(--primary--color);
-    border: none;
-    border-radius: 20px;
-    margin: 0 auto; 
+  width: 200px;
+  height: 5px;
+  background-color: var(--primary--color);
+  border: none;
+  border-radius: 20px;
+  margin: 10px auto;
+}
+
+.about--container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.about--left {
+  border-left: 2px solid var(--primary--color);
+  border-bottom: 2px solid var(--primary--color);
+  padding: 10px;
+}
+
+.about--left img {
+  height: 400px;
+  width: auto;
+  object-fit: cover;
+}
+
+.about--right {
+  max-width: 600px;
+}
+
+.content {
+  color: white;
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.content--buttons {
+  text-align: center;
+}
+
+.btn {
+  background-color: var(--primary--color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 40px;
+}
+
+.btn img {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 768px) {
+  .about--container {
+    flex-direction: column;
+    gap: 30px;
   }
-  .content{
-    color: white;
-   font-size: 20px;
-   width: 600px;
-   line-height: 1.5;
+
+  .about--left img {
+    height: 300px;
   }
-  .about--left{
-    border-left: 2px solid var(--primary--color);
-    border-bottom: 2px solid var(--primary--color);
-    height: fit-content;
-    width: fit-content;
-    padding: 10px;
+  .content {
+    font-size: 16px;
   }
-  .about--container{
-    display: flex;
-    margin: 30px;
-    gap: 100px;
-    justify-content: center;
-    align-items: center;
-  }
-  .about--left img{
-height: 600px;
-  }
+}

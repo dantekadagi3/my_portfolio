@@ -3,6 +3,7 @@ import '../Styles/contact.css';
 import phone from '../assets/phone.png';
 import mail from '../assets/mail.png';
 
+
 function Contact() {
   return (
     <section className="contact-section">
@@ -10,6 +11,7 @@ function Contact() {
         <h1>Contact Me</h1>
         <hr />
       </div>
+      <div className="bottom">
       <div className="left">
         <Contactinfo
           icon={phone}
@@ -38,6 +40,8 @@ function Contact() {
           <button type="submit">Send Message</button>
         </form>
       </div>
+</div>
+      
     </section>
   );
 }
